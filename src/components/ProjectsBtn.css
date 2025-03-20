@@ -1,0 +1,50 @@
+.projects-btn {
+  height: 52px;
+  padding: 0 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-accent);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.projects-btn:hover {
+  background-color: var(--color-highlight);
+}
+
+.btn-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.btn-arrow {
+  margin-left: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.projects-btn:hover .btn-arrow {
+  transform: translateX(0.25rem);
+}
+
+.btn-gradient {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-primary);
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+  z-index: 0;
+}
+
+.projects-btn:hover .btn-gradient {
+  transform: translateY(0);
+}

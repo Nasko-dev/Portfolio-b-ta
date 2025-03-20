@@ -1,0 +1,60 @@
+.avatar-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.avatar-glow {
+  position: absolute;
+  inset: -0.125rem;
+  background: var(--gradient-primary);
+  border-radius: 1rem;
+  filter: blur(4px);
+  opacity: 0.3;
+  transition: opacity 1s, duration 0.2s;
+  animation: gradientPosition 3s ease infinite;
+}
+
+.avatar-glow:hover {
+  opacity: 1;
+  transition-duration: 0.2s;
+}
+
+.avatar-image {
+  transform: translateZ(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 10;
+  display: block;
+}
+
+.avatar-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(59, 130, 246, 0.8), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  border-radius: 1rem;
+}
+
+.avatar-info {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.avatar-name {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: white;
+}
+
+.avatar-title {
+  font-size: 0.875rem;
+  color: white;
+}
