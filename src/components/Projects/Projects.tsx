@@ -217,6 +217,7 @@ const Projects = () => {
         >
           {categories.map((category) => (
             <button
+              type="button"
               key={category}
               className={`filter-btn ${
                 activeFilter === category ? "active" : ""

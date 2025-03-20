@@ -484,12 +484,6 @@
 }
 
 /* Suppression des animations associées */
-@keyframes slideRight,
-@keyframes slideLeft,
-@keyframes gridMove {
-  display: none;
-}
-
 .footer {
   position: fixed;
   bottom: 0;
